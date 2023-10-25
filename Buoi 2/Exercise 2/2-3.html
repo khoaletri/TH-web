@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-3</title>
+</head>
+
+<body>
+    <h2>Exercise 3</h2>
+    <form id="ageForm">
+        <label for="birthYear">Enter Birth Year:</label>
+        <input type="number" id="birthYear">
+        <button type="submit">Calculate Age</button>
+    </form>
+    <script>
+        const ageForm = document.getElementById("ageForm");
+        ageForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const birthYear = document.getElementById("birthYear").value;
+            const currentYear = new Date().getFullYear();
+            const age = currentYear - birthYear;
+            alert("Your age is: " + age);
+        });
+    </script>
+</body>
+
+</html>

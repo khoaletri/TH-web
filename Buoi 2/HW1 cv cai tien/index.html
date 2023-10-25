@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My CV</title>
+</head>
+<body>
+    <!-- Left-side menu -->
+    <div class="menu">
+        <div class="menu-item" onclick="scrollToSection('about-me')">About Me</div>
+        <div class="menu-item" onclick="scrollToSection('experiences')">Experiences</div>
+        <div class="menu-item" onclick="scrollToSection('abilities')">Abilities</div>
+        <div class="menu-item" onclick="scrollToSection('video-section')">Video</div>
+    </div>
+
+    <header class="header">
+        <div class="background-container">
+            <img src="https://www.thepinknews.com/wp-content/uploads/2019/06/billy-herrington.jpg?w=768&h=416&crop=1.jpg" alt="Profile Picture" class="profile-picture">
+        </div>
+        <h1>Lê Trí Khoa</h1>
+        <p>Computer Science Student from Vietnam</p>
+    </header>
+    
+    <section class="about-me" id="about-me">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate computer science student from Vietnam with a keen interest in web development and Gachi.
+        </p>
+    </section>
+
+    <section class="experiences" id="experiences">
+        <h2>Experiences</h2>
+        <ul>
+            <li><strong>Web Developer Intern</strong> at UIT</li>
+            <li><strong>Teaching Assistant</strong> at UIT</li>
+            <li><strong>Backend Developer</strong> at UIT</li>
+        </ul>
+    </section>
+
+    <section class="abilities" id="abilities">
+        <h2>Abilities</h2>
+        <div class="skill">
+            <label>SQL:</label>
+            <div class="stars" data-rating="5"> </div>
+        </div>
+        <div class="skill">
+            <label>Javascript:</label>
+            <div class="stars" data-rating="1"> </div>
+        </div>
+        <div class="skill">
+            <label>React:</label>
+            <div class="stars" data-rating="3"> </div>
+        </div>
+        <div class="skill">
+            <label>Python:</label>
+            <div class="stars" data-rating="4"> </div>
+        </div>
+        <div class="skill">
+            <label>English:</label>
+            <div class="stars" data-rating="5"> </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="video-section">
+        <h2>My Favorite Video</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JPxfAYYo7NA?si=MNPrGi8tp0RIuV39" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

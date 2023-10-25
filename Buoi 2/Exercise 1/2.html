@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Copy Text to Clipboard</title>
+</head>
+<body>
+  <h2>Exercise 1-2</h2>
+  <input type="text" id="textInput" placeholder="Enter text here">
+  <button id="copyButton">Copy</button>
+
+  <script>
+    function copyToClipboard() {
+      const textToCopy = document.getElementById("textInput").value;
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        alert("Text has been copied to clipboard.");
+      }).catch(err => {
+        console.error("Could not copy text: ", err);
+      });
+    }
+
+    document.getElementById("copyButton").addEventListener("click", copyToClipboard);
+  </script>
+
+</body>
+</html>

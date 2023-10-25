@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-4</title>
+</head>
+
+<body>
+    <h2>Exercise 4</h2>
+    <a id="hoverLink">Hover over me</a>
+    <p id="textToHighlight">This is some <strong>bold</strong> text.</p>
+    <script>
+        const hoverLink = document.getElementById("hoverLink");
+        hoverLink.addEventListener("mouseover", function () {
+            const boldText = document.querySelector("#textToHighlight strong");
+            boldText.style.backgroundColor = "yellow";
+        });
+    </script>
+</body>
+
+</html>

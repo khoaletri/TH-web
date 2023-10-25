@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1-4</title>
+</head>
+<body>
+  <h2>Exercise 1-4</h2>
+  <button id="downloadButton">Download JSON</button>
+
+  <script>
+    document.getElementById("downloadButton").addEventListener("click", function() {
+      const jsonObject = {
+        name: "Khoa",
+        age: 100
+      };
+
+      const jsonString = JSON.stringify(jsonObject, null, 2);
+      const blob = new Blob([jsonString], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'data.json';
+      a.click();
+
+      URL.revokeObjectURL(url);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2-2</title>
+</head>
+
+<body>
+    <h2>Exercise 2-2</h2>
+    <form id="myForm">
+        <input type="text" id="textInput" placeholder="Enter a string">
+        <button type="button" id="submitButton">Submit</button>
+    </form>
+    <script>
+        const textInput = document.getElementById('textInput');
+        const submitButton = document.getElementById('submitButton');
+
+        submitButton.addEventListener('click', function () {
+            // Get the value of the input field
+            const inputValue = textInput.value;
+
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(inputValue)
+                    .then(function () {
+                        // Change the button text to "Copied to Clipboard"
+                        submitButton.textContent = 'Copied to Clipboard';
+                    })
+                    .catch(function (error) {
+                        console.error('Failed to copy to clipboard: ', error);
+                    });
+            } else {
+                // Fallback for browsers that don't support clipboard API
+                console.error('Clipboard API is not supported in this browser.');
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
