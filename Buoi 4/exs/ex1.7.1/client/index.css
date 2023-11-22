@@ -1,0 +1,17 @@
+/* index.css */
+
+/* Reset default margin and padding */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set root container height */
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

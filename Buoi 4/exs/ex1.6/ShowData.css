@@ -1,0 +1,21 @@
+.ShowData {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.ShowData dl {
+  margin: 0;
+  padding: 0;
+}
+
+.ShowData dt {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ShowData dd {
+  margin-bottom: 10px;
+}

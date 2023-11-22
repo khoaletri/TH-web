@@ -1,0 +1,38 @@
+.PeopleList {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
