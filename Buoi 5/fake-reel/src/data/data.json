@@ -1,0 +1,28 @@
+[
+    {
+        "id": "1",
+        "username": "Your MOM",
+        "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+        "isFollowed": true,
+        "title": "OMEGALUL?",
+        "profileUrl": "https://archives.bulbagarden.net/media/upload/thumb/4/42/0321Wailord.png/250px-0321Wailord.png",
+        "reaction": {
+            "likes": "1.1M",
+            "comments": "40K",
+            "isLiked": true
+        }
+    },
+    {
+        "id": "2",
+        "username": "Big Chungus",
+        "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "isFollowed": false,
+        "title": "#funny",
+        "profileUrl": "https://i1.sndcdn.com/artworks-000464511288-31uztv-t500x500.jpg",
+        "reaction": {
+            "likes": "100K",
+            "comments": "10K",
+            "isLiked": false
+        }
+    }
+]

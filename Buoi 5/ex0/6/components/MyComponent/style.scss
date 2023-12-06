@@ -1,0 +1,18 @@
+.my-component {
+  height: 100vh;
+  background-color: var(--bg-main);
+  .title {
+    padding: 10px;
+    font-size: 40px;
+    color: var(--txt1);
+  }
+}
+
+:root {
+  --txt1: black;
+  --bg-main: white;
+  &[data-theme="dark"] {
+    --txt1: white;
+    --bg-main: black;
+  }
+}
